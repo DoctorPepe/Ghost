@@ -8,7 +8,7 @@ The fundemental principle of multi-layer tone generation lies in the use of CTCS
 
 Instead of using CTCSS tones in this conventional sense, we can instead use both subaudible tones and conventional tones simultaneously:
 
-![Standard Frame Design](https://github.com/DoctorPepe/Ghost/master/MLTG_Diagram.jpg)
+![Standard Frame Design](/MLTG_Diagram.jpg)
 
 ### Layer 1
 Layer 1 is the subaudible level. This includes a header and footer, which is a single designated CTCSS tone to signify the beginning and end of each frame, as well as the senders callsign. The frame portion of layer 1 includes checksums to give a method of identifying interference or packet loss, as well as some extra room for further data. This extra room can be used to send various supplamentary data, such as GPS or gridsquare location, weather data, or signal loss to name a few. Additionally, layer 1 can be used in combination with layers 2 and 3 to increase simultaneous data transmission to decrease the time it takes to transmit a frame.
