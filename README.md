@@ -13,7 +13,7 @@ Instead of using CTCSS tones in this conventional sense, we can instead use both
 ### Layer 1
 Layer 1 is the subaudible level. This includes a header and footer, which is a single designated CTCSS tone to signify the beginning and end of each frame, as well as the senders callsign. The frame portion of layer 1 includes checksums to give a method of identifying interference or packet loss, as well as some extra room for further data. This extra room can be used to send various supplamentary data, such as GPS or gridsquare location, weather data, or signal loss to name a few. Additionally, layer 1 can be used in combination with layers 2 and 3 to increase simultaneous data transmission to decrease the time it takes to transmit a frame.
 
-## Layer 2/3
+### Layer 2/3
 Layers 2 and 3 consist of your standard radioteletype high and low signals which make up the signal data. Think RTTY for PSK31. In additiona to the callsign being transmitted in the header, it is also sent here. The callsign here is sent as a redudency, and creates an additionall check to ensure callsign accuracy. 
 
 While the initial goal of ghost is to create an even more robust digital text mode, the hope is that ghost could one day be multi-mode, including sending data, images, or the maybe multiple at once. 
